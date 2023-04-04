@@ -1,0 +1,101 @@
+﻿
+
+  table.main {
+    width: 100%;
+    }
+  table.main td {
+    border-width: 1px 1px 1px 1px;
+    padding: 1px 1px 1px 1px;
+    background-color: #ffffcc;
+      font-family: verdana,arial, helvetica,  sans-serif;
+      font-size: 11px;
+  }
+  table.main th {
+    border-width: 1px 1px 1px 1px;
+    padding: 0px 0px 0px 0px;
+    background-color: #ffccff;
+  
+  }
+  table.main a{TEXT-DECORATION: none;}
+
+body{
+  background: rgb(238, 238, 238);
+  margin:50px 0px; padding:0px;
+      text-align:center;
+      font-family: "Verdana", sans-serif;
+  }
+h1 {
+  text-align:left;
+
+  font-family: "Verdana", sans-serif;
+}
+
+
+input {
+  display: flex;
+  width: 190px;
+  float: center;
+  margin: auto;
+  padding: 5px;
+  align-items: center;
+  border-radius: 5px;
+}
+
+label {
+  
+  text-align: left, top;
+}
+input[type="submit"]
+{
+  background-color: #1f1f20;
+  border: 1px solid black;
+  color: white;
+  padding: 16px 32px;
+  margin: 2px 1px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Verdana", sans-serif;
+  font-size: 16px;
+  height: 20px;
+  line-height: 0;
+}
+textarea {
+  width: 50%;
+  height: 40%;
+  border: 3px solid #cccccc;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: "Verdana", sans-serif;
+  color: black;
+
+}
+
+select {
+  width: 130px;
+  height: 50px;
+  font-size: 100%;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color:#379bee;
+  border: 2px solid black;
+  color: white;
+  padding: 10px;
+  align-items: center;
+  display: inline-block;
+  text-align:center;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+   transition: color 0.3s ease, background-color 0.3s ease, border-bottom-color 0.3s ease;
+}/* IE <= 11 */
+select::-ms-expand {
+  display: none; 
+}
+select:hover,
+select:focus {
+  color: black;
+  background-color: rgb(147, 163, 252);
+  border-bottom-color: black;
+}
+

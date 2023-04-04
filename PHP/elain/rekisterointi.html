@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/htmlstyle.css">
+    <body style='background-image: url("kuvat/bg2.jpeg");'></body>
+</head>
+
+<body>
+    <form name="lomake" action="kayttajatunnistus.php" onsubmit="return validateForm()" method="POST">
+    <h2>Rekisteröinti</h2>
+    <h2>eläinrekisteriin</h2>
+
+        <label for="name">Käyttäjätunnus:
+            <input name="username" type="text"><br><br>
+        </label>
+        <label for="name">Salasana (8 merkkiä minimi):
+            <input name="password" type="password" minlength="8" required><br><br>
+        </label>
+        <label for="name">Sähköposti:
+            <input name="kayttaja_sahkoposti" type="text"><br><br>
+        </label>
+        <input type="hidden" name="lomaketunnistin" value="kuusi">
+        <label for="name">Kirjoita numero 6 kenttään kirjaimin:
+            <input name="kuusi" type="text"><br><br>
+        </label>
+        <input type="submit" value="Lähetä" name="submit">
+    </form>
+    <script>
+        function validateForm() {
+
+            var x = document.forms["lomake"]["lomaketunnistin"].value;
+            var y = document.forms["lomake"]["kuusi"].value;
+            // etsitään tyhjät syötekentät
+            var inputs = document.getElementsByTagName('input');
+            for (var i = 0; i < inputs.length; i++) {
+                if (inputs[i].value.length == 0) {
+                    // tyhjä syötekenttä löytyi ja näytetään virheilmoitus
+                    alert("Jätit tietoja täyttämättä. Ole hyvä ja täytä lomake uudestaan.");
+                    return false;
+                }
+            }
+
+            if (x != y) {
+                alert("Tarkista, että numero 6 on kirjoitettu kirjaimin");
+                return false;
+            }
+        }
+    </script>
+    <p>Mikäli sinulla on jo käyttäjätili olemassa, siirry
+        <a href="kirjautuminen.html">kirjautuminen palveluun</a>
+    </p>
+</body>
+
+</html>

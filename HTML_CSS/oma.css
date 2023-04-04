@@ -1,0 +1,165 @@
+body {
+    background-image: url("Tournesol.png");
+    background-position: left top;
+    background-attachment: fixed;
+}
+
+header h1 {
+    font-size: 400%;
+}
+
+h1 {
+    font-size: 200%;
+    color: darkblue;
+}
+
+h2 {
+    color: darkred;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    font-style: italic;
+}
+
+strong {
+    color: red;
+    text-decoration: underline;
+}
+
+em {
+    background-color: lightyellow;
+    border: dashed 1px grey;
+}
+
+header {
+
+    height: 200px;
+    width: 50em;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: white;
+    padding: 1em;
+    border-radius: 1em;
+    border: 5px inset #cccccc;
+    position: relative;
+    box-shadow: inset 5px 5px 5px black;
+}
+
+
+header h1 {
+    text-shadow: 2px 2px grey;
+}
+
+header img {
+    float: left;
+}
+
+article {
+    width: 40em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    background-color: white;
+    border-top-style: 2px black solid;
+    border-right-style: 1px grey dotted;
+    border-bottom-style: 4px black solid;
+    border-left-style: 1px grey dotted;
+    box-shadow: 20px 20px 60px grey;
+}
+
+article img {
+    background-color: black;
+    padding: 10px;
+    border-bottom: 15px grey;
+    border-top: 15px grey;
+    border-left: 15px lightgray;
+    border-right: 15px lightgray;
+    outline-style: groove;
+    outline-width: 10px;
+    outline-color: lightgray;
+    margin-top: 2em;
+    margin-left: 2em;
+    margin-bottom: 2em;
+    margin-right: 0em;
+    box-shadow: 2px 2px;
+    float: right;
+}
+
+article ul {
+    border-top: 2px blue solid;
+    border-bottom: 2px blue solid;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    color: darkblue;
+}
+
+article ul ul {
+    border: none;
+    border-left: 6px groove blue;
+    list-style-type: square;
+}
+
+table {
+    border: 3px double blue;
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Courier New', Courier, monospace;
+    border-collapse: collapse;
+}
+
+thead th {
+    background-color: blue;
+    color: white;
+    text-shadow: -1px -1px 1px black;
+    padding-top: 0em;
+    padding-bottom: 0em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+tbody th {
+    border-top: 2px solid blue;
+    border-bottom: 1px solid blue;
+}
+
+footer {
+    background-color: white;
+    border: 1px dotted grey;
+    padding: 0.5em;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer li {
+    display: inline-block;
+    margin-top: 0em;
+    margin-left: 0.5em;
+    margin-bottom: 0em;
+    margin-right: 0.5em;
+    padding-left: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 1em;
+    border: 1px solid grey;
+    border-radius: 1em;
+    background-color: gold;
+    inset: 0px 5px 0px 5px color lightgrey;
+    inset: 5px 0px 5px 0px color grey;
+    backdrop-filter: blur(5px) grey;
+}

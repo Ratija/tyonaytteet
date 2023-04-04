@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="FileSaver.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.4/jszip.min.js"  type="text/javascript"></script>
+  <script type="text/javascript" src="https://fastcdn.org/FileSaver.js/1.1.20151003/FileSaver.js" ></script>
+  <title>T8: Lotto-ohjelmisto</title>
+</head>
+
+<body onload="load()">
+  <script type="text/javascript" src="funktiot.js" src="FileSaver.js"></script>
+  <h1>LottoKone</h1>
+  <p>Valitse 7 numeroa</p>
+    
+  <table class="numerot" id="taulu"></table>
+  <br>
+  <button style="background-color: green;" type="button" onclick="arvo()">Suorita lottoarvonta</button>
+  <button style="background-color: red;" type="button" onclick="tyhjenna()">Tyhjennä numerot</button>
+  <button onclick="vaihdaVari()">Vaihda väri</button>
+  <br>
+  <br>
+  <button onclick="tallennaTiedostoon()">Lataa tiedostona</button>
+  <br>
+  <br>
+    <div id="myProgress">
+    <div id="myBar">0%</div>
+  </div>
+  <table>
+    <td id="valitutNumerot"></td>
+    <p id="tulos"></p>
+  </table>
+  <br>
+  Lottoa kerralla enemmän, anna rivimäärä: <input name="massa" type="text" id="massa">
+  <button onclick="massaLotto()">Tee rivit</button>
+ 
+  <div id="random"></div>
+  
+ 
+  
+
+  
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" type = "text/css" href = "css/htmlstyle.css">
+    <body style='background-image: url("kuvat/bg2.jpeg");'></body>
+</head>
+<body>
+    <form name="lomake" action="kayttajatunnistus.php" onsubmit="return validateForm()" method="POST">
+    <h2>Kirjautuminen</h2>
+    <h2>eläinrekisteriin</h2>
+    
+        Käyttäjätunnus: <input name="username" type="text"><br><br>
+        Salasana (8 merkkiä minimi): <input name="password" type="password" minlength="8" required><br><br>
+        <input type="hidden" name="lomaketunnistin" value="1">
+        <input type="submit" value="Lähetä">
+    <p>Et ole vielä rekisteröitynyt? Ole hyvä ja
+    <a href="rekisterointi.html">rekisteröidy käyttäjäksi.</a></p> 
+    </form>
+    <script>
+        function validateForm() {
+            // etsitään tyhjät syötekentät
+            var inputs = document.getElementsByTagName('input');
+            for (var i = 0; i < inputs.length; i++) {
+                    if(inputs[i].value.length == 0){
+                        // tyhjä syötekenttä löytyi ja näytetään virheilmoitus
+                        alert("Jätit tietoja täyttämättä. Ole hyvä ja täytä lomake uudestaan.");
+                        return false;
+                    }
+            }            
+        }
+    </script>
+</body>
+</html>
+
